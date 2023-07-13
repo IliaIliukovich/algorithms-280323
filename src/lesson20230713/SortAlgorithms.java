@@ -36,7 +36,7 @@ public class SortAlgorithms {
     }
 
     // selection sort
-    private static void sortBruteForce(int[] ints) {
+    public static void sortBruteForce(int[] ints) {
         for (int i = 0; i < ints.length; i++) {
             int min = ints[i];
             int indMin = i;
