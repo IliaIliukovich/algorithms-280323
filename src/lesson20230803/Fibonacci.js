@@ -1,3 +1,11 @@
+// fibonacci sequence
+// 0 1 1 2 3 5 8 13
+// f(0) = 0
+// f(1) = 1
+// f(2) = 1
+// f(3) = 2
+// f(4) = 3
+
 function fibonacci(n) {
     if (n === 0) return 0;
     if (n === 1) return 1;
@@ -35,7 +43,7 @@ function fibonacciTabulation(n){
     return cache[n];
 }
 
-function fibonacciTabulationOpimized(n){
+function fibonacciTabulationOptimized(n){
     if (n === 0) return 0;
     if (n === 1) return 1;
     let cache1 = 0;
@@ -50,7 +58,7 @@ function fibonacciTabulationOpimized(n){
     return result;
 }
 
-console.log(fibonacciMemo(45));
-console.log(fibonacciTabulation(45));
-console.log(fibonacciTabulationOpimized(45));
-console.log(fibonacci(45));
+console.log(fibonacci(30));
+console.log(fibonacciMemo(30));
+console.log(fibonacciTabulation(30));
+console.log(fibonacciTabulationOptimized(30));
